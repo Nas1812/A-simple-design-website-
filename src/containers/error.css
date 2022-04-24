@@ -1,0 +1,45 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+
+  /* Direction of the items, can be row or column */
+  flex-direction: column;
+}
+
+.page-header,
+.page-footer {
+  flex-shrink: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  text-align: center;
+}
+
+.error {
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem;
+  background-color: rgb(116, 113, 113);
+}
+/* .error h1 {
+  animation: gelatine 02s infinite;
+} */
+
+/* @keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+} */
